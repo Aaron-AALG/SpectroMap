@@ -3,7 +3,6 @@ SpectroMap
 
 SpectroMap is a peak detection algorithm that computes the constellation map (or audio fingerprint) of a given signal.
 
-
 Installation
 ======================
 
@@ -27,8 +26,10 @@ spectrogram object
 
 An example to apply SpectroMap over a signal is:
 
+.. code:: python
+
     import numpy as np
-    from spectromap import spectromap
+    from spectromap.functions.spectromap import spectromap
 
     y = np.random.rand(44100)
     kwargs = {'fs': 22050, 'nfft': 512, 'noverlap':64}
@@ -48,12 +49,15 @@ An example to apply SpectroMap over a signal is:
     # Get the peaks coordinates as as (s, Hz, dB)-array.
     extraction_t_f_dB = SMap.from_peaks_to_array()
 
+
 peak_search function
-------------------
+---------------------
 
 In case you desire to compute the spectrogram by yourself, then you can make use of the peak search function instead.
 
-    from spectromap import peak_search
+.. code:: python
+
+    from spectromap.functions.spectromap import peak_search
 
     fraction = 0.05 # Fraction of spectrogram to compute local comparisons
     condition = 2   # Axis to analyze (0: Time, 1: Frequency, 2: Time+Frequency)
