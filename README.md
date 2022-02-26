@@ -2,9 +2,8 @@ SpectroMap
 ======================
 
 ![python-version](https://img.shields.io/badge/python->=3.8-green.svg)
-[![pypi-version](https://img.shields.io/pypi/v/uwtopsis.svg)](https://pypi.python.org/pypi/uwtopsis/)
-![license](https://img.shields.io/pypi/l/uwtopsis.svg)
-[![Downloads](https://static.pepy.tech/personalized-badge/uwtopsis?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/uwtopsis)
+[![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/uwtopsis/)
+![license](https://img.shields.io/pypi/l/spectromap.svg)
 
 SpectroMap is a peak detection algorithm that computes the constellation map (or audio fingerprint) of a given signal.
 
@@ -38,7 +37,7 @@ An example to apply SpectroMap over a signal is:
 
 ```python
 import numpy as np
-from spectromap import spectromap
+from spectromap.functions.spectromap import spectromap
 
 y = np.random.rand(44100)
 kwargs = {'fs': 22050, 'nfft': 512, 'noverlap':64}
@@ -65,7 +64,7 @@ peak_search function
 In case you desire to compute the spectrogram by yourself, then you can make use of the peak search function instead.
 
 ```python
-from spectromap import peak_search
+from spectromap.functions.spectromap import peak_search
 
 fraction = 0.05 # Fraction of spectrogram to compute local comparisons
 condition = 2   # Axis to analyze (0: Time, 1: Frequency, 2: Time+Frequency)
