@@ -2,7 +2,7 @@ SpectroMap
 ======================
 
 ![python-version](https://img.shields.io/badge/python->=3.8-green.svg)
-[![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/uwtopsis/)
+[![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/spectromap/)
 ![license](https://img.shields.io/pypi/l/spectromap.svg)
 [![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/spectromap)
 
