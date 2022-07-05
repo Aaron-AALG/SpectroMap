@@ -6,12 +6,22 @@ tags:
   - Audio processing
   - Spectrogram analysis
 authors:
-  - name: Aaron Lopez-Garcia
+  - name: Aarón López-García
     orcid: 0000-0001-8332-0381
     affiliation: 1
+  - name: Brian Martínez-Rodríguez
+    orcid: 0000-0002-1109-0078
+    affiliation: 2
+  - name: Vicente Liern
+    orcid: 0000-0001-5883-9640
+    affiliation: 3
 affiliations:
- - name: University of Valencia, logara8@alumni.uv.es
+ - name: Department of Computer Science, Universitat de València, Valencia, Spain, logara8@alumni.uv.es
    index: 1
+ - name: Universidad Internacional de la Rioja (UNIR), Logroño, La Rioja, Spain, brian.martinez@unir.net
+   index: 2
+ - name: Departmento de Matemáticas para la Economía y la Empresa, Universitat de València, Valencia, Spain, vicente.liern@uv.es
+   index: 3
    
 date: 5 July 2022
 bibliography: paper.bib
@@ -99,7 +109,6 @@ id_peaks, peaks = peak_search(spectrogram, fraction, condition)
 
 # Acknowledgements
 
-I would like to acknowledge the contribution and support made by Brian
-Martínez-Rodríguez. This packages was developed as an application in music plagiarism: _A proposal to compare the similarity between musical products. One more step for automated plagiarism detection?_ [doi:10.1007/978-3-031-07015-0_16](http://dx.doi.org/10.1007/978-3-031-07015-0_16), in order to reduce the computational cost that imply music comparisons.
+This packages was developed as an application in music plagiarism: _A proposal to compare the similarity between musical products. One more step for automated plagiarism detection?_ [doi:10.1007/978-3-031-07015-0_16](http://dx.doi.org/10.1007/978-3-031-07015-0_16), in order to reduce the computational cost that imply music comparisons.
 
 # References
