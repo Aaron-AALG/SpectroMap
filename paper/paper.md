@@ -50,6 +50,7 @@ This way, we get the topologically prominent elements per each feature vector. O
 
 ![Example of a spectrogram with its fingerprint stacked.\label{fig:spectrogram}](spectrogram_peaks.png)
 
+An in-depth example of the application of SpectroMap can be found in [@lopezgarcia2022].
 
 # Algorithm
 
