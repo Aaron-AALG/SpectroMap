@@ -19,14 +19,14 @@ bibliography: paper.bib
 
 # Summary
 
-In computer science, fingerprinting is a procedure that summarizes the input data by mapping it to a much shorter item. Similarly to human fingerprints, such transformation contains the basic information and properties of the original data, so it can be used to identify it among other samples. In regard of the acoustic field, audio fingerprinting is understood as an algorithm that extracts the main component taking into account the perceptual characteristics of the audio. Most of the time, these techniques are applied over the spectrogram representation of the signal. Wang, developed the idea of constellation map for Shazam Entertainment in order to implement an audio search algorithm [@wang2003]. Over the years, many different techniques have been developed [@Cano2005], for example, we can also find recognition of activities of daily living via audio [@fingerprintingPires2018]. In this paper, we have developed an open source audio search algorithm written in Python programming language.
+In computer science, fingerprinting is a procedure that summarizes the input data by mapping it to a much shorter item. Similarly to human fingerprints, such transformation contains the basic information and properties of the original data, so it can be used to identify it among other samples. In regard of the acoustic field, audio fingerprinting is understood as an algorithm that extracts the main component taking into account the perceptual characteristics of the audio. Most of the time, these techniques are applied over the spectrogram representation of the signal. Wang, developed the idea of constellation map for Shazam Entertainment in order to implement an audio search algorithm [@wang2003]. Over the years, many different techniques have been developed [@Cano2005], for example, we can also find recognition of activities of daily living via audio [@Pires2018]. In this paper, we have developed an open source audio search algorithm written in Python programming language.
 
 # Statement of need
 
 With the aim of implementing a fingerprint extraction for a given musical signal $X_t$, we have designed an algorithm that computes a global peak detection over the spectrogram associated to give us its constellation map. Let $N_{FFT}$ and $N_O$ be the length of the Fast Fourier Transform (FFT) window and the number of elements to overlap between segments respectively, we first compute the spectrogram of the signal ($S_{tfa}$), by using the Hamming window, in order to get the (time, frequency, amplitude) vectors by considering these two parameters. Such representation contains the amplitude spatial information to analyze. Our engine search determines whether a time-frequency point can be considered locally relevant according to its neighbourhood. Then, the detection is processed regarding a required band.
 Let $T$ and $F$ be the time and frequency bands of the spectrogram with the amplitude of the event, we can reformulate the spectrogram as its rows and columns representations.
 
-$$ S_{tfa} = (T_i^1, ..., T_i^n) = (F_j^1, ..., F_j^m) $$
+$$ S_{tfa} = (T_i^1, ..., T_i^n) = (F_j^1, ..., F_j^m). $$
 
 As part of the engine search, we define two windows to process the local pairwise comparisons with a respective length of $d_T$ and $d_F$, whose functionality is to extract a number of elements of the band and return the local maximum. Without limiting the generality of the foregoing, we can mathematically describe the time-band window mechanism with length of $0< d_T\le n$ and structure $T_i = (T_i^1, ..., T_i^n)$ as:
 
@@ -36,9 +36,10 @@ When we group all the values we drop those elements that have equal index to avo
 
 $$ \Phi_T^{d_T} = \{\phi_T^{d_T}(T_i)\}_{i=1}^n. $$
 
-This way, we get the topologically prominent elements per each feature vector. Owing to the first equation, is is easy to note that even though there are $n-d_T-1$ matches, the window may contain a smaller number of elements whenever $d_T > 2$. Depending of how restrictive we need to be, we can proceed with just one of the bands or combine them to create a more stringent search and distortion resistant since it is returned only the peaks that are prominent in both directions. Finally, the algorithm merge all the band-dependent peaks, as shown in equation 2, to give us the total number of spatial points that determine the so-called audio fingerprint.
+This way, we get the topologically prominent elements per each feature vector. Owing to the first equation, is is easy to note that even though there are $n-d_T-1$ matches, the window may contain a smaller number of elements whenever $d_T > 2$. Depending of how restrictive we need to be, we can proceed with just one of the bands or combine them to create a more stringent search and distortion resistant since it is returned only the peaks that are prominent in both directions. Finally, the algorithm merge all the band-dependent peaks, as shown in equation 3, to give us the total number of spatial points that determine the so-called audio fingerprint. In \autoref{fig:spectrogram}, we can see a graphical example.
 
-![Flowchart with the inner architecture of the algorithm implemented that detects the topological peaks of a spectrogram.\label{fig:algorithm}](peak_search.png)
+![Example of a spectrogram with its fingerprint stacked.\label{fig:spectrogram}](spectrogram_peaks.png)
+
 
 # Algorithm
 
@@ -53,6 +54,8 @@ Our engine search, named SpectroMap, processes audio signals in order to return 
 7. Extract such elements and create a file with the (time, frequency, amplitude) vectors.
 
 Regarding the step 5, authors highly recommend to select both bands to perform the peak detection since the output is more filtered and spatially consistent. For the remainder steps, its choice is a personal decision that depends on the scope of the research. It is noteworthy to mention that the limitations of the method depend on the functionality of the Signal module of the SciPy library.
+
+![Flowchart with the inner architecture of the algorithm implemented that detects the topological peaks of a spectrogram.\label{fig:algorithm}](peak_search.png)
 
 # Python implementation
 
