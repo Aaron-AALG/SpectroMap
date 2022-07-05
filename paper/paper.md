@@ -10,7 +10,7 @@ authors:
     orcid: 0000-0001-8332-0381
     affiliation: 1
 affiliations:
- - name: University of Valencia
+ - name: University of Valencia, logara8@alumni.uv.es
    index: 1
    
 date: 5 July 2022
