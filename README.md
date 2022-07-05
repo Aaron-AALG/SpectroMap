@@ -10,6 +10,8 @@ SpectroMap is a peak detection algorithm that computes the constellation map (or
 
 ![img](Images/peak_search.png)
 
+This packages was developed as an application in music plagiarism: [A proposal to compare the similarity between musical products. One more step for automated plagiarism detection?](https://doi.org/10.1007/978-3-031-07015-0_16), in order to reduce the computational cost that imply music comparisons.
+
 Installation
 ======================
 
