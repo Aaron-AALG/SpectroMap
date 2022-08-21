@@ -6,13 +6,17 @@ SpectroMap is a peak detection algorithm that computes the constellation map (or
 Installation
 ======================
 
-You can install the SpectroMap library from GitHub::
+You can install the SpectroMap library from GitHub:
+
+.. code:: sh
 
     git clone https://github.com/Aaron-AALG/spectromap.git
     python3 -m pip install -e spectromap
 
 
-You can also install it directly from PyPI::
+You can also install it directly from PyPI:
+
+.. code:: sh
 
     pip install spectromap
 
