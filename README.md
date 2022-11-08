@@ -2,15 +2,13 @@ SpectroMap
 ======================
 
 ![python-version](https://img.shields.io/badge/python->=3.8-green.svg)
-[![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/spectromap/)
+[![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/uwtopsis/)
 ![license](https://img.shields.io/pypi/l/spectromap.svg)
-[![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=total&units=international_system&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/spectromap)
+[![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=total&units=none&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/spectromap)
 
 SpectroMap is a peak detection algorithm that computes the constellation map (or audio fingerprint) of a given signal.
 
 ![img](Images/peak_search.png)
-
-This packages was developed as an application in music plagiarism: [A proposal to compare the similarity between musical products. One more step for automated plagiarism detection?](https://doi.org/10.1007/978-3-031-07015-0_16), in order to reduce the computational cost that imply music comparisons.
 
 Installation
 ======================
@@ -72,4 +70,21 @@ from spectromap.functions.spectromap import peak_search
 fraction = 0.05 # Fraction of spectrogram to compute local comparisons
 condition = 2   # Axis to analyze (0: Time, 1: Frequency, 2: Time+Frequency)
 id_peaks, peaks = peak_search(spectrogram, fraction, condition)
+```
+
+Cite this work
+======================
+
+If you use SpectroMap in your research I would appreciate a citation to the following paper:
+
+```bibtex
+@misc{https://doi.org/10.48550/arxiv.2211.00982,
+  doi = {10.48550/ARXIV.2211.00982},
+  url = {https://arxiv.org/abs/2211.00982},
+  author = {López-García, Aarón},
+  title = {SpectroMap: Peak detection algorithm for audio fingerprinting},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
 ```
