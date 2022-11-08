@@ -10,6 +10,11 @@ SpectroMap is a peak detection algorithm that computes the constellation map (or
 
 ![img](Images/peak_search.png)
 
+An example of the SectroMap implementation can be found in our [research paper](https://doi.org/10.1007/978-3-031-07015-0_16):
+
+López-García, A., Martínez-Rodríguez, B., Liern, V. (2022). *A Proposal to Compare the Similarity Between Musical Products. One More Step for Automated Plagiarism Detection?* In: Montiel, M., Agustín-Aquino, O.A., Gómez, F., Kastine, J., Lluis-Puebla, E., Milam, B. (eds) Mathematics and Computation in Music. MCM 2022. Lecture Notes in Computer Science(), vol 13267. Springer, Cham. https://doi.org/10.1007/978-3-031-07015-0_16
+
+
 Installation
 ======================
 
@@ -75,7 +80,7 @@ id_peaks, peaks = peak_search(spectrogram, fraction, condition)
 Cite this work
 ======================
 
-If you use SpectroMap in your research I would appreciate a citation to the following paper:
+If you use SpectroMap in your research I would appreciate a citation to the [following paper](https://arxiv.org/abs/2211.00982):
 
 ```bibtex
 @misc{https://doi.org/10.48550/arxiv.2211.00982,
