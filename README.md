@@ -38,7 +38,7 @@ An example to apply SpectroMap over a signal is:
 
 ```python
 import numpy as np
-from spectromap.functions.spectromap import spectromap
+from spectromap.spectromap import *
 
 y = np.random.rand(44100)
 kwargs = {'fs': 22050, 'nfft': 512, 'noverlap':64}
@@ -65,7 +65,7 @@ peak_search function
 In case you desire to compute the spectrogram by yourself, then you can make use of the peak search function instead.
 
 ```python
-from spectromap.functions.spectromap import peak_search
+from spectromap.spectromap import *
 
 fraction = 0.05 # Fraction of spectrogram to compute local comparisons
 condition = 2   # Axis to analyze (0: Time, 1: Frequency, 2: Time+Frequency)
