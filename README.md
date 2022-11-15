@@ -5,6 +5,7 @@ SpectroMap
 [![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/uwtopsis/)
 ![license](https://img.shields.io/pypi/l/spectromap.svg)
 [![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=total&units=none&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/spectromap)
+[![CodeFactor](https://www.codefactor.io/repository/github/aaron-aalg/spectromap/badge)](https://www.codefactor.io/repository/github/aaron-aalg/spectromap)
 
 SpectroMap is a peak detection algorithm that computes the constellation map (or audio fingerprint) of a given signal.
 
