@@ -5,7 +5,7 @@ SpectroMap
 [![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/spectromap/)
 ![license](https://img.shields.io/pypi/l/spectromap.svg)
 [![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=total&units=none&left_color=grey&right_color=orange&left_text=Downloads)](https://pepy.tech/project/spectromap)
-[![CodeFactor](https://www.codefactor.io/repository/github/aaron-aalg/spectromap/badge/main)](https://www.codefactor.io/repository/github/aaron-aalg/spectromap/overview/main)
+[![CodeFactor](https://www.codefactor.io/repository/github/aaron-aalg/spectromap/badge)](https://www.codefactor.io/repository/github/aaron-aalg/spectromap)
 [![](https://img.shields.io/badge/doi-10.48550/ARXIV.2211.00982+-blue.svg)](https://arxiv.org/abs/2211.00982)
 
 
