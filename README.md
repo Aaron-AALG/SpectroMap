@@ -3,9 +3,13 @@ SpectroMap
 
 ![python-version](https://img.shields.io/badge/python->=3.8-blue.svg)
 [![pypi-version](https://img.shields.io/pypi/v/spectromap.svg)](https://pypi.python.org/pypi/spectromap/)
-[![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=total&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/spectromap)
 ![license](https://img.shields.io/pypi/l/spectromap.svg)
-[![CodeFactor](https://www.codefactor.io/repository/github/aaron-aalg/spectromap/badge)](https://www.codefactor.io/repository/github/aaron-aalg/spectromap)
+[![CodeFactor](https://www.codefactor.io/repository/github/aaron-aalg/spectromap/badge)](https://www.codefactor.io/repository/github/aaron-aalg/spectromap/badge)
+
+[![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=week&left_color=grey&right_color=blue&left_text=Downloads/Week)](https://pepy.tech/project/spectromap)
+[![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=month&left_color=grey&right_color=blue&left_text=Downloads/Month)](https://pepy.tech/project/spectromap)
+[![Downloads](https://static.pepy.tech/personalized-badge/spectromap?period=total&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/spectromap)
+
 [![](https://img.shields.io/badge/doi-10.48550/ARXIV.2211.00982+-blue.svg)](https://arxiv.org/abs/2211.00982)
 
 
@@ -14,9 +18,15 @@ SpectroMap is a peak detection algorithm that computes the constellation map (or
 
 ![img](Images/peak_search.png)
 
-An example of the SectroMap implementation can be found in our [research paper](https://doi.org/10.1007/978-3-031-07015-0_16):
+An example of the SpectroMap implementation and its properties can be found in our research paper:
 
-López-García, A., Martínez-Rodríguez, B., Liern, V. (2022). *A Proposal to Compare the Similarity Between Musical Products. One More Step for Automated Plagiarism Detection?* In: Montiel, M., Agustín-Aquino, O.A., Gómez, F., Kastine, J., Lluis-Puebla, E., Milam, B. (eds) Mathematics and Computation in Music. MCM 2022. Lecture Notes in Computer Science(), vol 13267. Springer, Cham. https://doi.org/10.1007/978-3-031-07015-0_16
+- López-García, A. (2022). *SpectroMap: Peak detection algorithm for audio fingerprinting*. arXiv. https://arxiv.org/abs/2211.00982
+
+Further research papers are listed as follows:
+
+- López-García, A., Martínez-Rodríguez, B., Liern, V. (2022). *A Proposal to Compare the Similarity Between Musical Products. One More Step for Automated Plagiarism Detection?* In: Montiel, M., Agustín-Aquino, O.A., Gómez, F., Kastine, J., Lluis-Puebla, E., Milam, B. (eds) Mathematics and Computation in Music. MCM 2022. Lecture Notes in Computer Science(), vol 13267. Springer, Cham. https://doi.org/10.1007/978-3-031-07015-0_16
+
+- López-García, A. (2024). A Fingerprinting-Based Strategy for Musical Genre Similarity. In: Noll, T., Montiel, M., Gómez, F., Hamido, O.C., Besada, J.L., Martins, J.O. (eds) Mathematics and Computation in Music. MCM 2024. Lecture Notes in Computer Science, vol 14639. Springer, Cham. https://doi.org/10.1007/978-3-031-60638-0_26
 
 
 Installation
